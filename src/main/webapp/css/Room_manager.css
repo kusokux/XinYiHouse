@@ -1,0 +1,60 @@
+.roomManager-body{
+    margin-left: 18%;
+}
+.roomManager-table{
+    width: 100%;
+    width: -webkit-fill-available;
+
+}
+table {
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+}
+
+.table-bordered tr th {
+    border: 1px solid #eee;
+}
+
+td {
+    border: 1px solid #eee;
+}
+
+.roomManager-table-img{
+    width: 130px;
+    height: 80px;
+}
+.roomManager-form{
+    display: inline-flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 0;
+    height: 50px;
+    margin-left: 2%;
+}
+input{
+    margin-left: 1%;
+}
+.form-submit{
+    border-radius: 15px;
+    width: 60px;
+    border: 1px solid;
+}
+.form-input{
+    border-radius: 5px;
+    border: 1px solid;
+}
+.add-room{
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 2%;
+}
+.handin{
+    border: 1px solid;
+    background-color: aliceblue;
+    height: 35px;
+    border-radius: 10px;
+}
