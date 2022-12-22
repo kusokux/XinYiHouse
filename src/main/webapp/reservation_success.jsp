@@ -23,7 +23,7 @@
     }else{
 %>
     <script>
-        alert("出错了！请联系管理员！");
+        alert("出错了！");
     </script>
 <%
         response.setHeader("refresh","0.001;URL=index.jsp");

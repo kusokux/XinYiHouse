@@ -43,6 +43,7 @@
         <li v-for="(site, index) in sites">
             <a  @click="change(index)" :href="site.path" :class="currentIndex==index?'active':''"> {{site.text}}</a>
         </li>
+        <li><a href="index.jsp">返回</a></li>
     </ul>
     <div class="roomManager-body">
         <form action="rootRoomsearch" class="roomManager-form" v-show="currentIndex>=1">
