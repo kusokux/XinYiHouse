@@ -34,7 +34,8 @@ public class RoomSearch extends HttpServlet {
         ArrayList<Room> list = new ArrayList<>();
         // HttpSession session=request.getSession();
         try {
-
+            //判断是搜索
+            int choice = 1;
             conn = ConnectionManager.getConnection();
             String sql = "select * from room where room like  '%"+roomname+"%' ";
             // System.out.println(info);
@@ -54,7 +55,7 @@ public class RoomSearch extends HttpServlet {
             }
 
             //rs是获取到的信息，可以将其请求转发到另一个jsp页面再处理
-
+            request.setAttribute("choice",choice);
             request.setAttribute("list",list);
             request.getRequestDispatcher("roomresult.jsp").forward(request,response);
         } catch (Exception e) {
