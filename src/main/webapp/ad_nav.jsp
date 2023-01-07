@@ -170,25 +170,33 @@
     </el-dialog>
     <%--  编辑房源弹窗 --%>
     <el-dialog v-model="centerDialogVisible" title="编辑房源信息" width="60%" center>
-        <form style="text-align: center" name="house_edit" action="rootRoom" method="post">
+        <form style="text-align: center" name="house_edit" action="roomGeng" method="post" >
             <label>房源编号:</label>
-            <input placeholder="1" id="hid" name="house_id" disabled>
+            <input placeholder="1" id="hid" name="house_id" >
             <br>
             <br>
             <label>房源名字:</label>
-            <input id="hname" name="house_name" placeholder="1好房子">
+            <input id="hname" name="house_name" placeholder="1好房子" >
             <br>
             <br>
             <label>房源介绍:</label>
-            <input id="hintro" name="house_intro" placeholder="简单介绍">
+            <input id="hintro" name="house_intro" placeholder="简单介绍" >
             <br>
             <br>
-            <label>房源状态:</label>
-            <input id="hstate" name="house_state" placeholder="空闲">
+
+            <label>房源价格:</label>
+            <input id="hprice" name="house_price" placeholder="500" >
             <br>
             <br>
-            <input type="submit" value="完成编辑" class="handin">
-            <button name="room" type="submit" id="uroom" class="handin" style="margin-left: 20px">删除该项</button>
+            <label>房源数量:</label>
+            <input id="hquantity" name="house_quantity" placeholder="5" >
+            <br>
+            <br>
+            <input  type="submit" value="完成编辑" class="handin" >
+        </form>
+
+        <form style="text-align: center" name="house_edit" action="rootRoom" method="post" >
+            <button name="room" type="submit" id="uroom" class="handin" style="margin-left: 10px">删除该项</button>
         </form>
     </el-dialog>
 
